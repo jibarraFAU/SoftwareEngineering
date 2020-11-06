@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var emotes = require('./routes/emotes');
 
-var port = 8080;
+var port = 3000;
 
 var app = express();
 
