@@ -1,0 +1,43 @@
+<head>
+    <link rel="stylesheet" href="emotes.component.css">
+</head>
+
+
+<form class="well" (submit)="addEmote($event)">
+    <div class="form-group">
+        <input type="text" [(ngModel)]="title" name="title" class="form-control" placeholder="Add Emote">
+    </div>
+</form>
+
+<div class="emote-list">
+
+    <!-- <div class="row">
+            <div class="col-md-1">
+                <input type="checkbox">
+            </div>
+            <div class="col-md-7">
+                Emote: {{emote.title}} | Date: {{emote.date}}
+            </div>
+            <div class="col-md-4">
+                <input type="button" value="Delete" class="btn btn-danger">
+            </div>
+        </div> -->
+    <table>
+        <tr>
+            <th>Emote</th>
+            <th>Date</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let emote of emotes">
+            <td>{{emote.title}}</td>
+            <td>{{emote.date}}</td>
+            <td><input type="button" (click)="deleteEmote(emote._id)" value="Delete" class="btn btn-danger"></td>
+
+        </tr>
+
+
+    </table>
+
+
+
+</div>

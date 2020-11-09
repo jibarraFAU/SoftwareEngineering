@@ -32,14 +32,14 @@ router.get('/emote/:id', function (req, res, next) {
 // Post Emote
 router.post('/emote', function (req, res, next) {
     var emote = req.body;
-    if (!emote.title || (emote.date + '')) {
+    if (!emote.title || !(emote.date + '')) {
         res.status(400);
         res.json({
             "error": "bad data"
         });
     }
     else {
-        db.emotes.save(task, function (err, emote) {
+        db.emotes.save(emote, function (err, emote) {
             if (err) {
                 res.send(err);
             }

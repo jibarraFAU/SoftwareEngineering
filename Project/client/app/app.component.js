@@ -6,14 +6,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.AppComponent = void 0;
 var core_1 = require("@angular/core");
+var emote_services_1 = require("./services/emote.services");
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
         core_1.Component({
+            moduleId: module.id,
             selector: 'my-app',
-            template: '<h1>My First Angular App</h1>'
+            templateUrl: 'app.component.html',
+            providers: [emote_services_1.EmoteService]
         })
     ], AppComponent);
     return AppComponent;

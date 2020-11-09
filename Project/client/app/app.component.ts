@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
+import { EmoteService } from './services/emote.services';
+
 @Component({
+    moduleId: module.id,
     selector: 'my-app',
-    template: '<h1>My First Angular App</h1>'
+    templateUrl: 'app.component.html',
+    providers: [EmoteService]
 })
 export class AppComponent { }
