@@ -12,6 +12,24 @@ var emote_services_1 = require("./services/emote.services");
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
     }
+    AppComponent.prototype.toggleChartDisplay = function () {
+        var T = document.getElementById("chartsContainer");
+        if (T.style.display == "block") {
+            T.style.display = "none";
+        }
+        else {
+            T.style.display = "block";
+        }
+    };
+    AppComponent.prototype.toggleEmoteDisplay = function () {
+        var Y = document.getElementById("emotesContainer");
+        if (Y.style.display == "block") {
+            Y.style.display = "none";
+        }
+        else {
+            Y.style.display = "block";
+        }
+    };
     AppComponent = __decorate([
         core_1.Component({
             moduleId: module.id,

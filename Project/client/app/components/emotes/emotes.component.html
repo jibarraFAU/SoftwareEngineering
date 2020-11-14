@@ -1,28 +1,28 @@
+<html>
+
 <head>
     <link rel="stylesheet" href="emotes.component.css">
 </head>
 
 
-<form class="well" (submit)="addEmote($event)">
+<form autocomplete="off" class="well" (submit)="addEmote($event)">
     <div class="form-group">
         <input type="text" [(ngModel)]="title" name="title" class="form-control" placeholder="Add Emote">
     </div>
 </form>
 
+
+<!-- <div id="chart">
+    <iframe style="background: #FFFFFF;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);"
+        width="640" height="480"
+        src="https://charts.mongodb.com/charts-project-0-ujjgd/embed/charts?id=71cd4020-5258-4b8a-8e24-875ec7afab78&theme=light&autoRefresh=true&maxDataAge=5">
+    </iframe>
+</div> -->
+
+<!--div style="float:right"-->
 <div class="emote-list">
 
-    <!-- <div class="row">
-            <div class="col-md-1">
-                <input type="checkbox">
-            </div>
-            <div class="col-md-7">
-                Emote: {{emote.title}} | Date: {{emote.date}}
-            </div>
-            <div class="col-md-4">
-                <input type="button" value="Delete" class="btn btn-danger">
-            </div>
-        </div> -->
-    <table>
+    <table class="center">
         <tr>
             <th>Emote</th>
             <th>Date</th>
@@ -31,13 +31,10 @@
         <tr *ngFor="let emote of emotes">
             <td>{{emote.title}}</td>
             <td>{{emote.date}}</td>
-            <td><input type="button" (click)="deleteEmote(emote._id)" value="Delete" class="btn btn-danger"></td>
-
+            <td><input type="button" (click)="deleteEmote(emote._id)" value="Remove" class="button"></td>
         </tr>
-
-
     </table>
 
-
-
 </div>
+
+</html>

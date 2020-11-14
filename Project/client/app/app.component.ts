@@ -7,4 +7,27 @@ import { EmoteService } from './services/emote.services';
     templateUrl: 'app.component.html',
     providers: [EmoteService]
 })
-export class AppComponent { }
+export class AppComponent {
+
+    toggleChartDisplay() {
+        var T = document.getElementById("chartsContainer");
+        if (T.style.display == "block") {
+            T.style.display = "none";
+        }
+        else {
+            T.style.display = "block";
+        }
+
+    }
+    toggleEmoteDisplay() {
+        var Y = document.getElementById("emotesContainer");
+        if (Y.style.display == "block") {
+            Y.style.display = "none";
+        }
+        else {
+            Y.style.display = "block";
+        }
+
+    }
+
+}

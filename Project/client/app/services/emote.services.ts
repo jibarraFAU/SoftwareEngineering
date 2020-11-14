@@ -26,4 +26,5 @@ export class EmoteService {
         return this.http.delete('/api/emote/' + id)
             .map(res => res.json());
     }
+
 }

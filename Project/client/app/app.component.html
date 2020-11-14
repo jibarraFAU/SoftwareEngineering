@@ -1,5 +1,30 @@
+<html>
+
+
+
+<head>
+    <link rel="stylesheet" href="app.component.css">
+</head>
+
 <div class="container">
-    <h1>Emotes List</h1>
+
+    <h1>Jaime Ibarra Software Engineering Project</h1>
     <hr>
+
+    <button class="button" style="vertical-align:middle" name="two" (click)="toggleChartDisplay()"><span>View
+            Charts</span></button>
+    <button class="button" style="vertical-align:middle" name="one" (click)="toggleEmoteDisplay()"><span>Add
+            Emote</span></button>
+
+</div>
+
+<div class="container" id="chartsContainer" style="display:none">
+    <charts></charts>
+</div>
+
+<hr>
+<div class="container" id="emotesContainer" style="display:none">
     <emotes></emotes>
 </div>
+
+</html>

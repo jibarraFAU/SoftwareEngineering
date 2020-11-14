@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
+import { ViewChild } from '@angular/core';
 import { EmoteService } from '../../services/emote.services';
 import { Emote } from '../../../Emote';
+import { stringify } from 'querystring';
+
+
 
 @Component({
     moduleId: module.id,
@@ -12,11 +16,14 @@ export class EmotesComponent {
     title: string;
     date: Date;
 
+
     constructor(private emoteService: EmoteService) {
         this.emoteService.getEmotes()
             .subscribe(emotes => {
                 this.emotes = emotes;
             });
+
+
     }
 
     addEmote(event) {
@@ -53,5 +60,6 @@ export class EmotesComponent {
             }
         });
     }
+
 
 }

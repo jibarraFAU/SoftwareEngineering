@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+.button[name="one"] {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #2188fd;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: 'Raleway', sans-serif;
+  }
+
+.button[name="one"] span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+.button[name="one"] span:after {
+    content: ':D';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+.button:hover[name="one"] span {
+    padding-right: 25px;
+  }
+  
+.button:hover[name="one"] span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.button[name="two"] {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #037a1d;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+.button[name="two"] span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+.button[name="two"] span:after {
+    content: 'B)';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+.button:hover[name="two"] span {
+    padding-right: 25px;
+  }
+  
+.button:hover[name="two"] span:after {
+    opacity: 1;
+    right: 0;
+  }
+
