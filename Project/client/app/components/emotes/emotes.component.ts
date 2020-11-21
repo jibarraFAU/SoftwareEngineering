@@ -15,6 +15,7 @@ export class EmotesComponent {
     emotes: Emote[];
     title: string;
     date: Date;
+    time: Date;
 
 
     constructor(private emoteService: EmoteService) {
@@ -32,6 +33,7 @@ export class EmotesComponent {
         var newEmote = {
             title: this.title,
             date: (currentDate.getMonth() + 1) + '-' + currentDate.getDate() + '-' + currentDate.getFullYear(),
+            time: (currentDate.getHours()) + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds(),
         };
         console.log(this.title);
         console.log(newEmote.date);
@@ -43,6 +45,76 @@ export class EmotesComponent {
             });
     }
 
+    addHappy() {
+        //event.preventDefault();
+        var currentDate = new Date();
+        var newEmote = {
+            title: "happy",
+            date: (currentDate.getMonth() + 1) + '-' + currentDate.getDate() + '-' + currentDate.getFullYear(),
+            time: (currentDate.getHours()) + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds(),
+        };
+        console.log(this.title);
+        console.log(newEmote.date);
+
+        this.emoteService.addEmote(newEmote)
+            .subscribe(emote => {
+                this.emotes.push(emote);
+                this.title = '';
+            });
+    }
+
+    addSad() {
+        //event.preventDefault();
+        var currentDate = new Date();
+        var newEmote = {
+            title: "sad",
+            date: (currentDate.getMonth() + 1) + '-' + currentDate.getDate() + '-' + currentDate.getFullYear(),
+            time: (currentDate.getHours()) + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds(),
+        };
+        console.log(this.title);
+        console.log(newEmote.date);
+
+        this.emoteService.addEmote(newEmote)
+            .subscribe(emote => {
+                this.emotes.push(emote);
+                this.title = '';
+            });
+    }
+    addAngry() {
+        //event.preventDefault();
+        var currentDate = new Date();
+        var newEmote = {
+            title: "angry",
+            date: (currentDate.getMonth() + 1) + '-' + currentDate.getDate() + '-' + currentDate.getFullYear(),
+            time: (currentDate.getHours()) + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds(),
+        };
+        console.log(this.title);
+        console.log(newEmote.date);
+
+        this.emoteService.addEmote(newEmote)
+            .subscribe(emote => {
+                this.emotes.push(emote);
+                this.title = '';
+            });
+    }
+
+    addHungry() {
+        //event.preventDefault();
+        var currentDate = new Date();
+        var newEmote = {
+            title: "hungry",
+            date: (currentDate.getMonth() + 1) + '-' + currentDate.getDate() + '-' + currentDate.getFullYear(),
+            time: (currentDate.getHours()) + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds(),
+        };
+        console.log(this.title);
+        console.log(newEmote.date);
+
+        this.emoteService.addEmote(newEmote)
+            .subscribe(emote => {
+                this.emotes.push(emote);
+                this.title = '';
+            });
+    }
     /*
         Delete Emote: delets emote selected by button press
         Process: Search data array for matching id for emote.

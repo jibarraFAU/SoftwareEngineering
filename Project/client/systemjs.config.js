@@ -21,10 +21,11 @@
             '@angular/http': 'npm:@angular/http/bundles/http.umd.js',
             '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
             '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
+            //'@ngular/router/testing': 'npm:@angular/router/testing/router-testing.umd.js',
             // other libraries
             'rxjs': 'npm:rxjs',
             'angular-in-memory-web-api': 'npm:angular-in-memory-web-api',
-            'ng2-charts': 'npm:ng2-charts/bundles/ng2-charts.umd.min.js',
+            'ng2-charts': 'node_modules/ng2-charts/bundles/ng2-charts.umd.min.js'
         },
         // packages tells the System loader how to load when no filename and/or no extension
         packages: {
@@ -39,7 +40,10 @@
                 main: './index.js',
                 defaultExtension: 'js'
             },
-            'ng2-charts': { main: 'ng2-charts.js', defaultExtension: 'js' }
+            'ng2-charts': {
+                main: 'ng2-charts.js',
+                defaultExtension: 'js'
+            }
         }
     });
 })(this);

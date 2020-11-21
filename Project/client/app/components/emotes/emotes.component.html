@@ -5,6 +5,20 @@
 </head>
 
 
+<div>
+    <table class="center">
+        <th><input type="button" (click)="addHappy()" value="happy" class="buttonHappy"></th>
+
+        <th><input type="button" (click)="addSad()" value="sad" class="buttonSad"></th>
+
+        <th><input type="button" (click)="addAngry()" value="angry" class="buttonAngry"> </th>
+        <th><input type="button" (click)="addHungry()" value="hungry" class="buttonHungry"> </th>
+    </table>
+
+
+</div>
+
+
 <form autocomplete="off" class="well" (submit)="addEmote($event)">
     <div class="form-group">
         <input type="text" [(ngModel)]="title" name="title" class="form-control" placeholder="Add Emote">
@@ -26,11 +40,13 @@
         <tr>
             <th>Emote</th>
             <th>Date</th>
+            <th>Time</th>
             <th>Action</th>
         </tr>
         <tr *ngFor="let emote of emotes">
             <td>{{emote.title}}</td>
             <td>{{emote.date}}</td>
+            <td>{{emote.time}}</td>
             <td><input type="button" (click)="deleteEmote(emote._id)" value="Remove" class="button"></td>
         </tr>
     </table>

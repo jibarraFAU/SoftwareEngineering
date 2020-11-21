@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/', index);
 app.use('/api', emotes);
-app.use('/charts', charts);
+
 
 app.listen(port, function () {
     console.log('Server started on port' + port);
