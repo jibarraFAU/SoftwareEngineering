@@ -16,6 +16,10 @@ var RegisterComponent = /** @class */ (function () {
     }
     RegisterComponent.prototype.ngOnInit = function () {
     };
+    RegisterComponent.prototype.onSubmit = function (f) {
+        console.log(f.value);
+        console.log(f.valid);
+    };
     RegisterComponent = __decorate([
         core_1.Component({
             moduleId: module.id,

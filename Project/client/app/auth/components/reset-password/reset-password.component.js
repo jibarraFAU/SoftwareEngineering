@@ -16,6 +16,10 @@ var ResetPasswordComponent = /** @class */ (function () {
     }
     ResetPasswordComponent.prototype.ngOnInit = function () {
     };
+    ResetPasswordComponent.prototype.onSubmit = function (f) {
+        console.log(f.value);
+        console.log(f.valid);
+    };
     ResetPasswordComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
