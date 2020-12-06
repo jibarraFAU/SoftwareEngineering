@@ -27,7 +27,7 @@ var EmotesComponent = /** @class */ (function () {
         var currentDate = new Date();
         var newEmote = {
             title: this.title,
-            date: (('0' + (currentDate.getMonth() + 1)).slice(-2)) + '-' + (('0' + currentDate.getDate()).slice(-2)) + '-' + (('0' + currentDate.getFullYear()).slice(-2)),
+            date: (('0' + (currentDate.getMonth() + 1)).slice(-2)) + '-' + (('0' + currentDate.getDate()).slice(-2)) + '-' + (currentDate.getFullYear()),
             time: currentDate.getHours() + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds(),
         };
         console.log(this.title);
@@ -44,7 +44,7 @@ var EmotesComponent = /** @class */ (function () {
         var currentDate = new Date();
         var newEmote = {
             title: "happy",
-            date: ("0" + (currentDate.getMonth() + 1)).slice(-2) + '-' + ("0" + currentDate.getDate()).slice(-2) + '-' + ("0" + currentDate.getFullYear()).slice(-2),
+            date: ("0" + (currentDate.getMonth() + 1)).slice(-2) + '-' + ("0" + currentDate.getDate()).slice(-2) + '-' + currentDate.getFullYear(),
             time: currentDate.getHours() + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds(),
         };
         console.log(this.title);
@@ -61,7 +61,7 @@ var EmotesComponent = /** @class */ (function () {
         var currentDate = new Date();
         var newEmote = {
             title: "sad",
-            date: ("0" + (currentDate.getMonth() + 1)).slice(-2) + '-' + ("0" + currentDate.getDate()).slice(-2) + '-' + ("0" + currentDate.getFullYear()).slice(-2),
+            date: ("0" + (currentDate.getMonth() + 1)).slice(-2) + '-' + ("0" + currentDate.getDate()).slice(-2) + '-' + (currentDate.getFullYear()),
             time: (currentDate.getHours()) + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds(),
         };
         console.log(this.title);
@@ -78,7 +78,7 @@ var EmotesComponent = /** @class */ (function () {
         var currentDate = new Date();
         var newEmote = {
             title: "angry",
-            date: ("0" + (currentDate.getMonth() + 1)).slice(-2) + '-' + ("0" + currentDate.getDate()).slice(-2) + '-' + ("0" + currentDate.getFullYear()).slice(-2),
+            date: ("0" + (currentDate.getMonth() + 1)).slice(-2) + '-' + ("0" + currentDate.getDate()).slice(-2) + '-' + (currentDate.getFullYear()),
             time: (currentDate.getHours()) + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds(),
         };
         console.log(this.title);
@@ -95,7 +95,7 @@ var EmotesComponent = /** @class */ (function () {
         var currentDate = new Date();
         var newEmote = {
             title: "hungry",
-            date: ("0" + (currentDate.getMonth() + 1)).slice(-2) + '-' + ("0" + currentDate.getDate()).slice(-2) + '-' + ("0" + currentDate.getFullYear()).slice(-2),
+            date: ("0" + (currentDate.getMonth() + 1)).slice(-2) + '-' + ("0" + currentDate.getDate()).slice(-2) + '-' + (currentDate.getFullYear()),
             time: (currentDate.getHours()) + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds(),
         };
         console.log(this.title);
