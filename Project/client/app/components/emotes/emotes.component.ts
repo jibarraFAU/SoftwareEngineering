@@ -33,7 +33,7 @@ export class EmotesComponent {
         var newEmote = {
             title: this.title,
             date: (currentDate.getMonth() + 1) + '-' + currentDate.getDate() + '-' + currentDate.getFullYear(),
-            time: (currentDate.getHours()) + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds(),
+            time: (currentDate.getHours() + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds(),
         };
         console.log(this.title);
         console.log(newEmote.date);
@@ -50,8 +50,8 @@ export class EmotesComponent {
         var currentDate = new Date();
         var newEmote = {
             title: "happy",
-            date: (currentDate.getMonth() + 1) + '-' + currentDate.getDate() + '-' + currentDate.getFullYear(),
-            time: (currentDate.getHours()) + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds(),
+            date: ("0" + (currentDate.getMonth() + 1)).slice(-2) + '-' + ("0" + currentDate.getDate()).slice(-2) + '-' + ("0" + currentDate.getFullYear()).slice(-2),
+            time: ("0" + (currentDate.getHours()).slice(-2) + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds(),
         };
         console.log(this.title);
         console.log(newEmote.date);
