@@ -1,9 +1,8 @@
 <html>
 
-
-
 <head>
     <link rel="stylesheet" href="app.component.css">
+    <base href="/">
 </head>
 
 <div class="container">
@@ -11,20 +10,27 @@
     <h1>Jaime Ibarra Software Engineering Project</h1>
     <hr>
 
-    <button class="button" style="vertical-align:middle" name="two" (click)="toggleChartDisplay()"><span>View
-            Charts</span></button>
-    <button class="button" style="vertical-align:middle" name="one" (click)="toggleEmoteDisplay()"><span>Add
+    <button class=" button" style="vertical-align:middle" name="one" (click)="toggleEmoteDisplay()"><span>Add
             Emote</span></button>
-
+    <button class="button" style="vertical-align:middle" name="two" (click)="toggleChartDisplay()"><span>Toggle
+            Charts</span></button>
 </div>
-
-<div class="container" id="chartsContainer" style="display:none">
-    <charts></charts>
-</div>
-
 <hr>
+<div class="container" id="wordCloud">
+    <iframe style="background: #FFFFFF;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);"
+        width="900" height="480"
+        src="https://charts.mongodb.com/charts-project-0-ujjgd/embed/charts?id=511f653d-7c7e-406a-a734-e2b5de8b1dfb&autoRefresh=10&theme=light"></iframe>
+</div>
+
+
 <div class="container" id="emotesContainer" style="display:none">
     <emotes></emotes>
+</div>
+
+<div class="container" id="chartsContainer" style="display:block">
+    <charts></charts>
+    <i>charts refresh every 10s</i>
+
 </div>
 
 </html>

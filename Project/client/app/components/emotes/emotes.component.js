@@ -27,7 +27,76 @@ var EmotesComponent = /** @class */ (function () {
         var currentDate = new Date();
         var newEmote = {
             title: this.title,
-            date: (currentDate.getMonth() + 1) + '-' + currentDate.getDate() + '-' + currentDate.getFullYear(),
+            date: (('0' + (currentDate.getMonth() + 1)).slice(-2)) + '-' + (('0' + currentDate.getDate()).slice(-2)) + '-' + (currentDate.getFullYear()),
+            time: currentDate.getHours() + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds(),
+        };
+        console.log(this.title);
+        console.log(newEmote.date);
+        this.emoteService.addEmote(newEmote)
+            .subscribe(function (emote) {
+            _this.emotes.push(emote);
+            _this.title = '';
+        });
+    };
+    EmotesComponent.prototype.addHappy = function () {
+        var _this = this;
+        //event.preventDefault();
+        var currentDate = new Date();
+        var newEmote = {
+            title: "happy",
+            date: ("0" + (currentDate.getMonth() + 1)).slice(-2) + '-' + ("0" + currentDate.getDate()).slice(-2) + '-' + currentDate.getFullYear(),
+            time: currentDate.getHours() + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds(),
+        };
+        console.log(this.title);
+        console.log(newEmote.date);
+        this.emoteService.addEmote(newEmote)
+            .subscribe(function (emote) {
+            _this.emotes.push(emote);
+            _this.title = '';
+        });
+    };
+    EmotesComponent.prototype.addSad = function () {
+        var _this = this;
+        //event.preventDefault();
+        var currentDate = new Date();
+        var newEmote = {
+            title: "sad",
+            date: ("0" + (currentDate.getMonth() + 1)).slice(-2) + '-' + ("0" + currentDate.getDate()).slice(-2) + '-' + (currentDate.getFullYear()),
+            time: (currentDate.getHours()) + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds(),
+        };
+        console.log(this.title);
+        console.log(newEmote.date);
+        this.emoteService.addEmote(newEmote)
+            .subscribe(function (emote) {
+            _this.emotes.push(emote);
+            _this.title = '';
+        });
+    };
+    EmotesComponent.prototype.addAngry = function () {
+        var _this = this;
+        //event.preventDefault();
+        var currentDate = new Date();
+        var newEmote = {
+            title: "angry",
+            date: ("0" + (currentDate.getMonth() + 1)).slice(-2) + '-' + ("0" + currentDate.getDate()).slice(-2) + '-' + (currentDate.getFullYear()),
+            time: (currentDate.getHours()) + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds(),
+        };
+        console.log(this.title);
+        console.log(newEmote.date);
+        this.emoteService.addEmote(newEmote)
+            .subscribe(function (emote) {
+            _this.emotes.push(emote);
+            _this.title = '';
+        });
+    };
+    EmotesComponent.prototype.addHungry = function () {
+        var _this = this;
+        //event.preventDefault();
+        var currentDate = new Date();
+        var newEmote = {
+            title: "hungry",
+            date: ("0" + (currentDate.getMonth() + 1)).slice(-2) + '-' + ("0" + currentDate.getDate()).slice(-2) + '-' + (currentDate.getFullYear()),
+            time: (currentDate.getHours()) + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds(),
         };
         console.log(this.title);
         console.log(newEmote.date);

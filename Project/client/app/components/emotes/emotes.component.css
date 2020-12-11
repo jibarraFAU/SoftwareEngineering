@@ -26,7 +26,7 @@ td{
     text-align: center;
     font-size: 16px;
     margin: 4px 2px;
-    border-radius: 10px;
+    border-radius: 4px;
     opacity: 0.6;
     transition: 0.3s;
     display: inline-block;
@@ -36,3 +36,80 @@ td{
   }
   
   .button:hover {opacity: 1}
+
+.buttonHappy {
+    background-color: #ddd;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 4px;
+    opacity: 1;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+.buttonHappy:hover {background-color: #fbf700;}
+
+.buttonSad {
+    background-color: #ddd;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 4px;
+    opacity: 1;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+.buttonSad:hover {background-color: #2188fd; color: rgb(255, 255, 255);}
+.buttonAngry {
+    background-color: #ddd;
+    color: rgb(0, 0, 0); 
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 4px;
+    opacity: 1;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+.buttonAngry:hover {background-color: #fd0000;
+    color: rgb(255, 255, 255);}
+
+.buttonHungry {
+      background-color: #ddd;
+      color: rgb(0, 0, 0); 
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 16px;
+      margin: 4px 2px;
+      border-radius: 4px;
+      opacity: 1;
+      transition: 0.3s;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: 'Raleway', sans-serif;
+    }
+    
+.buttonHungry:hover {background-color: #01831d;
+      color: rgb(255, 255, 255);}
