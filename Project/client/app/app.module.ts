@@ -11,8 +11,8 @@ import { ChartsComponent } from './components/charts/charts.component';
 import { AuthModule } from './auth/auth.module';
 import { AuthRoutingModule } from './auth/auth-routing.module';
 import { LoginComponent } from './auth/components/login/login.component';
-import { RegisterComponent } from './auth/components/register/register.component';
-import { ResetPasswordComponent } from './auth/components/reset-password/reset-password.component';
+// import { RegisterComponent } from './auth/components/register/register.component';
+// import { ResetPasswordComponent } from './auth/components/reset-password/reset-password.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 
 

@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
-import { ViewChild } from '@angular/core';
 import { EmoteService } from '../../services/emote.services';
 import { Emote } from '../../../Emote';
-import { stringify } from 'querystring';
 
 
 
